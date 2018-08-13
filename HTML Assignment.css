@@ -1,0 +1,72 @@
+#Menu_Options{
+    float:left;
+    margin-right:20px;
+
+    background: grey;
+	width: 100% ;
+}
+#Container_Div
+{
+	
+	padding-right:200px;
+	padding-left:200px;
+	background-color: #F5F5F5;
+}
+#Content
+{
+	width: 75%;
+	float: left;
+	background-color: white;
+}
+.Right_Panel
+{
+	width:25%;
+	float: left;	
+}
+#TopSB,#MiddleSB,#BottomSB
+{
+	background-color: white;
+
+}
+#Footer
+{
+	margin-top: 20px;
+	background-color: grey;
+	
+}
+#Main_Page
+{
+	margin-top: 30px;
+}
+#Right_Panel
+{
+	margin-top: 30px;
+	margin-right: 20px;
+}
+#Content
+{
+	margin-right: 30px;
+}
+.Border{
+    border-style:ridge;
+}
+#Headline1,#Headline2
+{
+	color: red;
+}
+h5{
+	color: #C0C0C0;
+}
+#Company{
+	color: red;
+}
+
+@media screen and (min-width:3000px) and (max-width:600px){
+    body{
+        width:100%;
+        background-color:lightblue;
+    }
+    .Content,.Right_Panel{
+        float:none;width:100%;
+    }
+}
