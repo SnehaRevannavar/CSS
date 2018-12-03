@@ -1,72 +1,104 @@
-#Menu_Options{
-    float:left;
-    margin-right:20px;
+* {
+	box-sizing: border-box;
+  }
 
-    background: grey;
-	width: 100% ;
-}
-#Container_Div
-{
+body
+    {
+      font-family: sans-serif;
+      padding:150px;
+      background-color: #f1f1f1;
+    }
+
+#Company_Logo
+    {
+      padding-bottom: 12px;
+      text-align: center;
+	}
 	
-	padding-right:200px;
-	padding-left:200px;
-	background-color: #F5F5F5;
-}
+
+#Company_Logo img
+    {
+
+      display: block;
+      overflow: hidden;
+      width: 135px;
+      height: 80px;
+    
+    
+    }
+
+#Menu_Options
+    {
+      overflow: hidden;
+      background-color: #aaa;
+    }
+
+#Menu_Options a
+    {
+      float: left;
+      display: block;
+      text-align: center;
+      padding:14px 16px;
+      text-decoration: none;
+	}
+#Menu_Options a:link
+	{
+		color:white;
+	}
+#Menu_Options,.Border,#Footer
+	{
+		border-radius:10px;
+	}
+
 #Content
-{
-	width: 75%;
-	float: left;
-	background-color: white;
-}
-.Right_Panel
-{
-	width:25%;
-	float: left;	
-}
-#TopSB,#MiddleSB,#BottomSB
-{
-	background-color: white;
+    {
+      float: left;
+      width:75%;
+    }
 
-}
-#Footer
-{
-	margin-top: 20px;
-	background-color: grey;
-	
-}
-#Main_Page
-{
-	margin-top: 30px;
-}
 #Right_Panel
+    {
+      float: left;
+      width: 25%;
+      padding-left:20px;
+    }
+
+#Middle
 {
-	margin-top: 30px;
-	margin-right: 20px;
-}
-#Content
-{
-	margin-right: 30px;
-}
-.Border{
-    border-style:ridge;
-}
-#Headline1,#Headline2
-{
-	color: red;
-}
-h5{
-	color: #C0C0C0;
-}
-#Company{
-	color: red;
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
 
-@media screen and (min-width:3000px) and (max-width:600px){
+.Border
+    {
+      background-color: white;
+      padding:40px;
+      margin-top: 10px;
+    }
+
+#Main_Page:after
+    {
+      content: "";
+      display: table;
+      clear:both;
+    }
+
+#Footer
+    {
+      padding: 20px;
+      text-align: left;
+      background-color: #aaa;
+      margin-top: 20px; 
+
+    }
+
+@media screen and (min-width:300px) and (max-width:800px){
     body{
         width:100%;
         background-color:lightblue;
     }
-    .Content,.Right_Panel{
-        float:none;width:100%;
+    #Content,#Right_Panel{
+		float:none;
+		width:100%;
     }
 }
